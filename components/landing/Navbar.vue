@@ -22,13 +22,17 @@ const open = ref(false);
 </script>
 
 <template>
-  <LandingContainer>
+  <LandingContainer class="sticky-top">
     <header class="flex flex-col lg:flex-row justify-between items-center my-5">
       <div class="flex w-full lg:w-auto items-center justify-between">
-        <a href="/" class="text-lg"
-          ><span class="font-bold text-slate-800">Nuxt</span
-          ><span class="text-slate-500">ship</span>
-        </a>
+
+        <div class="bg-white bg-opacity-50 backdrop-blur mt-3 rounded-full border p-2">
+          <a href="/"
+            ><span class="font-bold text-primary">Jella</span
+            ><span class="font-bold text-slate-400">&nbsp;AI</span>
+          </a>
+        </div>
+
         <div class="block lg:hidden">
           <button @click="open = !open" class="text-gray-800">
             <svg
@@ -53,8 +57,9 @@ const open = ref(false);
           </button>
         </div>
       </div>
+
       <nav
-        class="w-full lg:w-auto mt-2 lg:flex lg:mt-0"
+        class="w-full lg:w-auto mt-3 lg:flex lg:mt-3 bg-white bg-opacity-50 backdrop-blur mt-3 rounded-full border"
         :class="{ block: open, hidden: !open }"
       >
         <ul class="flex flex-col lg:flex-row lg:gap-3">
@@ -67,19 +72,29 @@ const open = ref(false);
             </a>
           </li>
         </ul>
-        <div class="lg:hidden flex items-center mt-3 gap-4">
+        <!-- <div class="lg:hidden flex items-center mt-3 gap-4">
           <LandingLink href="#" styleName="muted" block size="md"
             >Log in</LandingLink
           >
           <LandingLink href="#" size="md" block>Sign up</LandingLink>
-        </div>
+        </div> -->
       </nav>
+
       <div>
-        <div class="hidden lg:flex items-center gap-4">
+        <!-- <div class="hidden lg:flex items-center gap-4">
           <a href="#">Log in</a>
           <LandingLink href="#" size="md">Sign up</LandingLink>
-        </div>
+        </div> -->
       </div>
+
     </header>
   </LandingContainer>
 </template>
+
+<style scoped>
+  .sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Optional: Ensures the element stays on top of other content */
+  }
+</style>

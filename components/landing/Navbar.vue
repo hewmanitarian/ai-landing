@@ -1,7 +1,7 @@
 <script setup>
 const menuitems = [
   {
-    title: "Home",
+    title: "About",
     path: "/",
   },
   // {

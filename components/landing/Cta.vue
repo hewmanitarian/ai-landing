@@ -1,13 +1,16 @@
 <template>
   <div
-    class="bg-black px-20 py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center"
+    class="bg-gray-100 px-20 py-20 mt-20 mx-auto max-w-5xl rounded-3xl flex flex-col items-center text-center"
   >
-    <h2 class="text-white text-3xl md:text-6xl">Build faster websites.</h2>
-    <p class="text-slate-500 mt-4 text-lg md:text-xl">
-      Static or Dynamic, the choice is yours with Nuxt's hybrid rendering modes.
+    <h2 class="text-gray-500 text-3xl md:text-5xl">Join our Waitlist.</h2>
+    <p class="text-slate-500 mt-4 text-lg md:text-lg">
+      Stay up to date on Jella AI and get access to the beta when it arrives.
     </p>
-    <div class="flex mt-5">
-      <LandingLink href="#" styleName="inverted">Get Started</LandingLink>
+    <div class="flex mt-5 items-center">
+      <LandingLink href="/waitlist" class="rounded-xl flex items-center">
+        Join Waitlist
+        <Icon class="h-8 md:h-8 ml-2" name="uil:arrow-right" size="18" />
+      </LandingLink>
     </div>
   </div>
 </template>

@@ -11,7 +11,8 @@ definePageMeta({
     <LandingFeatures></LandingFeatures>
     <LandingLogos></LandingLogos>
     <LandingDivider></LandingDivider>
-    <!-- <LandingCta></LandingCta> -->
-    <!-- <LandingDivider></LandingDivider> -->
+    <LandingDivider></LandingDivider>
+    <LandingCta></LandingCta>
+    <LandingDivider></LandingDivider>
   </LandingContainer>
 </template>

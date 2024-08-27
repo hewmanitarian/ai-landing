@@ -108,7 +108,7 @@ onMounted(() => {
         Please enter your message.
       </div>
     </div>
-    <LandingButton type="submit" size="lg" block>Join Waitlist</LandingButton>
+    <LandingButton type="submit" size="lg" block class="rounded-xl">Join Waitlist</LandingButton>
     <div id="result" class="mt-3 text-center"></div>
   </form>
 </template>

@@ -26,15 +26,15 @@ const open = ref(false);
     <header class="flex flex-col lg:flex-row justify-between items-center my-5">
       <div class="flex w-full lg:w-auto items-center justify-between">
 
-        <div class="bg-white bg-opacity-50 backdrop-blur mt-3 rounded-full border p-2">
+        <div class="bg-white bg-opacity-50 backdrop-blur mt-3 rounded-2xl border p-2">
           <a href="/"
             ><span class="font-bold text-primary">Jella</span
             ><span class="font-bold text-slate-400">&nbsp;AI</span>
           </a>
         </div>
 
-        <div class="block lg:hidden">
-          <button @click="open = !open" class="text-gray-800">
+        <div class="block lg:hidden bg-white bg-opacity-50 backdrop-blur mt-3 rounded-2xl border p-2">
+          <button @click="open = !open" class="text-gray-800 pr-1 pl-0.5">
             <svg
               fill="currentColor"
               class="w-4 h-4"
@@ -59,15 +59,15 @@ const open = ref(false);
       </div>
 
       <nav
-        class="w-full lg:w-auto mt-3 lg:flex lg:mt-3 bg-white bg-opacity-50 backdrop-blur mt-3 rounded-full border"
+        class="w-full lg:w-auto mt-3 lg:flex lg:mt-3 bg-white bg-opacity-50 backdrop-blur mt-3 rounded-2xl border"
         :class="{ block: open, hidden: !open }"
       >
-        <ul class="flex flex-col lg:flex-row lg:gap-3">
-          <li v-for="item of menuitems">
+      <ul class="flex flex-col lg:flex-row lg:gap-3">
+          <li v-for="item of menuitems" class="text-center">
             <a
               :href="item.path"
-              class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900"
-            >
+              class="flex justify-center items-center lg:px-3 py-2 text-gray-600 hover:text-gray-900"
+              >
               {{ item.title }}
             </a>
           </li>

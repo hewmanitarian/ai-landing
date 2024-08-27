@@ -3,8 +3,8 @@ definePageMeta({
   layout: "landing",
 });
 
-const TeamImg1 = "serg.jpeg";
-const TeamImg2 = "hew.jpeg";
+const TeamImg1 = "serg.jpg";
+const TeamImg2 = "hew.jpg";
 
 const team = [
   {

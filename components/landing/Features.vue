@@ -15,13 +15,13 @@ const features = [
   {
     title: "Indexing",
     description:
-      "Automatic indexed databases enable lightning fast RAG queries.",
+      "Automatically indexed databases enable lightning fast RAG queries.",
     img: "indexdb"
   },
   {
     title: "Vectorization",
     description:
-      "Create multiple vector databases to create fine tuned models based on your data.",
+      "Create multiple vector databases to create fine-tuned models based on your data.",
     img: "vectordb"
   },
   {
@@ -33,7 +33,7 @@ const features = [
   {
     title: "No Lock-In",
     description:
-      "Use any LLM, or run mulitple to acheive improved accuracy.",
+      "Use any LLM, or run mulitple to achieve improved accuracy.",
     img: "llm"
   },
 ];

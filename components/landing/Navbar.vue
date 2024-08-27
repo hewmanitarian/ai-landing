@@ -10,11 +10,11 @@ const menuitems = [
   // },
   {
     title: "Team",
-    path: "/about",
+    path: "/team",
   },
   {
     title: "Waitlist",
-    path: "/contact",
+    path: "/waitlist",
   },
 ];
 

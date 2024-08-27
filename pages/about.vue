@@ -27,8 +27,8 @@ const team = [
 <template>
   <LandingContainer>
     <LandingSectionhead>
-      <template v-slot:title>About</template>
-      <template v-slot:desc>We are a small passionate team.</template>
+      <template v-slot:title>Team</template>
+      <template v-slot:desc>Lean, and mean.</template>
     </LandingSectionhead>
 
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">

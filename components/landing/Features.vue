@@ -31,7 +31,7 @@ const features = [
     img: "agents"
   },
   {
-    title: "LLM Agnostic",
+    title: "No Lock-In",
     description:
       "Use any LLM, or run mulitple to acheive improved accuracy.",
     img: "llm"
@@ -49,7 +49,9 @@ const features = [
       AI, for everyone.
     </h2>
     <p class="text-lg mt-4 text-slate-600">
-      Confused as to how to get started with creating your own advanced AI?
+      Integrate your knowledge base into generalized LLM's to superpower your service.
+      <br/>
+      Design custom systems that go beyond the capabilities of traditional AI.
       <br/>
       <b><span class="text-primary">Jella</span> <span class="font-bold text-slate-400">AI</span></b> makes it easy.
     </p>

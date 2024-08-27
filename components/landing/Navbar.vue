@@ -1,19 +1,19 @@
 <script setup>
 const menuitems = [
   {
-    title: "Features",
-    path: "#",
+    title: "Home",
+    path: "/",
   },
+  // {
+  //   title: "Pricing",
+  //   path: "/pricing",
+  // },
   {
-    title: "Pricing",
-    path: "/pricing",
-  },
-  {
-    title: "About",
+    title: "Team",
     path: "/about",
   },
   {
-    title: "Contact",
+    title: "Waitlist",
     path: "/contact",
   },
 ];

@@ -1,6 +1,6 @@
 <template>
   <main class="grid lg:grid-cols-2 place-items-center pt-20 pb-8 md:pt-20">
-    <div class="p-24 md:order-1 hidden md:block">
+    <div class="p-24 md:order-1 md:block">
       <img
         class="rounded-full transition-transform transform hover:scale-110"
         src="~/assets/svg/loading3.svg"

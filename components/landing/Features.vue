@@ -39,7 +39,7 @@ const features = [
 ];
 
   function getImageUrl(image) {
-    return new URL(`../../assets/img/${image}.png`, import.meta.url)
+    return `features/${image}.png`;
   }
 </script>
 

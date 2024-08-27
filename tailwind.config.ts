@@ -15,6 +15,13 @@ export default {
       fontFamily: {
         sans: ["Inter", ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        primary: {
+          DEFAULT: '#FF007F', // Dark, vibrant pink
+          light: '#FF66A1',   // Light variant
+          dark: '#CC0066',    // Dark variant
+        },
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],

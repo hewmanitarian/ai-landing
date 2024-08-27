@@ -9,7 +9,6 @@ definePageMeta({
     <LandingHero></LandingHero>
     <LandingDivider></LandingDivider>
     <LandingFeatures></LandingFeatures>
-    <LandingDivider></LandingDivider>
     <LandingLogos></LandingLogos>
     <LandingDivider></LandingDivider>
     <!-- <LandingCta></LandingCta> -->

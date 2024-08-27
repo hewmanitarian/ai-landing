@@ -15,10 +15,10 @@
 
     <div>
       <h1 class="text-5xl lg:text-6xl xl:text-6xl font-bold lg:tracking-tight">
-        <u>Knowledgeable</u> AI.. easy.
+        <u>Knowledgeable</u> AI.. simplified.
       </h1>
       <p class="text-lg mt-4 text-slate-600 max-w-xl">
-        <b><span class="text-primary">Jella</span> <span class="font-bold text-slate-400">AI</span></b> is a powerful no-code framework to help you build AI that can interact with your data and take action.
+        <b><span class="text-primary">Jella</span> <span class="font-bold text-slate-400">AI</span></b> is a powerful no-code framework to help you build AI that can learn from your data.
       </p>
       <!-- <div class="mt-6 flex flex-col sm:flex-row gap-3">
         <LandingLink

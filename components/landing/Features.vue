@@ -51,7 +51,7 @@ const features = [
     <p class="text-lg mt-4 text-slate-600">
       Confused as to how to get started with creating your own advanced AI?
       <br/>
-      Jella AI makes it as easy as dragging & dropping.
+      <b><span class="text-primary">Jella</span> <span class="font-bold text-slate-400">AI</span></b> makes it easy.
     </p>
   </div>
 

@@ -1,59 +1,64 @@
 <script setup>
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Consolidation",
     description:
-      "Build your site using Vue, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "Easily collect and link all of your data, no matter where it is.",
+    img: "consolidation"
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Categorization",
     description:
-      "Nuxt renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
+      "Intelligent categorization of your data enables different, specialized AI's from the same data.",
+    img: "categorization"
   },
   {
-    title: "On-Demand Components",
+    title: "Indexing",
     description:
-      "Need some JS? Nuxt can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
+      "Automatic indexed databases enable lightning fast RAG queries.",
+    img: "indexdb"
   },
   {
-    title: "Broad Integration",
+    title: "Vectorization",
     description:
-      "Nuxt supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
+      "Create multiple vector databases to create fine tuned models based on your data.",
+    img: "vectordb"
   },
   {
-    title: "SEO Enabled",
+    title: "Agent Workflows",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
+      "Create multiple agents that can interact with your data and take action.",
+    img: "agents"
   },
   {
-    title: "Community",
+    title: "LLM Agnostic",
     description:
-      "Nuxt is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
+      "Use any LLM, or run mulitple to acheive improved accuracy.",
+    img: "llm"
   },
 ];
+
+  function getImageUrl(image) {
+    return new URL(`../../assets/img/${image}.png`, import.meta.url)
+  }
 </script>
 
 <template>
   <div class="mt-16 md:mt-0">
     <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-      Everything you need to start a website
+      AI, for everyone.
     </h2>
     <p class="text-lg mt-4 text-slate-600">
-      Nuxt comes batteries included. It takes the best parts of state-of-the-art
-      tools and adds its own innovations.
+      Confused as to how to get started with creating your own advanced AI?
+      <br/>
+      Jella AI makes it as easy as dragging & dropping.
     </p>
   </div>
 
   <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
     <div v-for="item of features" class="flex gap-4 items-start">
-      <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
-        <Icon class="text-white" :name="item.icon" />
+      <div class="mt-1 bg-grey rounded-full p-2 w-20 h-20 shrink-0">
+        <img :src="getImageUrl(item.img)" />
       </div>
       <div>
         <h3 class="font-semibold text-lg">{{ item.title }}</h3>

@@ -28,8 +28,8 @@ const open = ref(false);
 
         <div class="bg-white bg-opacity-50 backdrop-blur mt-3 rounded-2xl border p-2">
           <a href="/"
-            ><span class="font-bold text-primary">Jella</span
-            ><span class="font-bold text-slate-400">&nbsp;AI</span>
+            ><span class="font-bold text-primary">Koala</span
+            ><span class="font-bold text-slate-400">&nbsp;Health</span>
           </a>
         </div>
 

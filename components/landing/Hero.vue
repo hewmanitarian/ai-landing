@@ -1,24 +1,24 @@
 <template>
   <main class="grid lg:grid-cols-2 place-items-center pt-20 pb-8 md:pt-20">
-    <div class="p-24 md:order-1 md:block">
+    <div class="md:order-0 md:block">
       <img
-        class="rounded-full transition-transform transform hover:scale-110"
-        src="~/assets/svg/loading3.svg"
+        class="rounded-full transition-transform transform hoverrotate"
+        src="~/assets/svg/hero1.svg"
         alt="Loading Image"
         loading="eager"
         format="avif"
-        width="400"
-        height="400"
+        width="1000"
+        height="1000"
       />
     </div>
 
 
     <div>
       <h1 class="text-5xl lg:text-6xl xl:text-6xl font-bold lg:tracking-tight">
-        <u>Knowledgeable</u> AI.. simplified.
+        <u>Appointments</u> on autopilot.
       </h1>
       <p class="text-lg mt-4 text-slate-600 max-w-xl">
-        <b><span class="text-primary">Jella</span> <span class="font-bold text-slate-400">AI</span></b> is a powerful no-code framework to help you build AI that learns from your data.
+        <b><span class="text-primary">Koala</span> <span class="font-bold text-slate-400">Health</span></b> is a new way to manage your health appointment scheduling.
       </p>
       <!-- <div class="mt-6 flex flex-col sm:flex-row gap-3">
         <LandingLink
@@ -43,6 +43,9 @@
 <style scoped>
   img {
     transition: transform 0.3s ease-in-out; /* Adjust the duration and timing function as needed */
-    box-shadow: 0 4px 16px rgba(255, 105, 180, 0.6); /* Increased blur radius for a blurrier pink box shadow */
+  }
+
+  .hoverrotate:hover {
+    transform: scale(1.20) rotate(10deg);
   }
 </style>

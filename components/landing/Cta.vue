@@ -4,7 +4,7 @@
   >
     <h2 class="text-gray-500 text-3xl md:text-5xl">Join our Waitlist.</h2>
     <p class="text-slate-500 mt-4 text-lg md:text-lg">
-      Stay up to date on Jella AI and get access to the beta when it arrives.
+      Stay up to date on <b><span class="text-primary">Koala</span> <span class="font-bold text-slate-400">Health</span></b> and get access to the beta when it arrives.
     </p>
     <div class="flex mt-5 items-center">
       <LandingLink href="/waitlist" class="rounded-xl flex items-center">

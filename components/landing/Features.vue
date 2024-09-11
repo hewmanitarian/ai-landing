@@ -46,14 +46,14 @@ const features = [
 <template>
   <div class="mt-16 md:mt-0">
     <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-      AI, for everyone.
+      Stop missing appointments.
     </h2>
     <p class="text-lg mt-4 text-slate-600">
       Integrate your knowledge base into generalized LLM's to superpower your service.
       <br/>
       Design custom systems that go beyond the capabilities of traditional AI.
       <br/>
-      <b><span class="text-primary">Jella</span> <span class="font-bold text-slate-400">AI</span></b> makes it easy.
+      <b><span class="text-primary">Koala</span> <span class="font-bold text-slate-400">Health</span></b> makes it easy.
     </p>
   </div>
 

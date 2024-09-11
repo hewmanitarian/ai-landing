@@ -17,9 +17,9 @@ export default {
       },
       colors: {
         primary: {
-          DEFAULT: '#FF007F', // Dark, vibrant pink
-          light: '#FF66A1',   // Light variant
-          dark: '#CC0066',    // Dark variant
+          DEFAULT: '#9370DB', // Lavender
+          light: '#E6E6FA',   // Light variant
+          dark: '#7B68EE',    // Dark variant
         },
       },
     },

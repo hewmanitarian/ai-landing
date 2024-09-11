@@ -9,7 +9,7 @@ const TeamImg2 = "hew.jpg";
 const team = [
   {
     name: "Serg R.",
-    title: "Business",
+    title: "Operations",
     avatar: {
       src: TeamImg1
     },
@@ -28,7 +28,7 @@ const team = [
   <LandingContainer>
     <LandingSectionhead>
       <template v-slot:title>Team</template>
-      <template v-slot:desc>Lean, and mean.</template>
+      <template v-slot:desc>&nbsp;</template>
     </LandingSectionhead>
 
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
@@ -78,6 +78,7 @@ const team = [
   .background2 {
     width: 100vw;
     object-fit: contain;
+    margin-top: -360px;
   }
 
 </style>

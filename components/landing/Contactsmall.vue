@@ -71,40 +71,40 @@ onMounted(() => {
       <br/>
       <br/>
       <br/>
-  <form
-    action="https://api.web3forms.com/submit"
-    method="POST"
-    id="form"
-    class="needs-validation flex items-center space-x-4"
-    novalidate
-  >
-    <input type="hidden" name="access_key" value="7925f9dd-b19c-4de3-acfc-31e8981a13fd" />
-    <!-- Create your free access key from https://web3forms.com/ -->
-    <input
-      type="checkbox"
-      class="hidden"
-      style="display: none"
-      name="botcheck"
-    />
-    <div class="flex-grow">
-      <label for="email_address" class="sr-only">Email</label>
-      <input
-        id="email_address"
-        type="email"
-        placeholder="Email"
-        name="email"
-        required
-        class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded outline-none focus:ring-4 border-gray-100 ring-gray-100"
-      />
-    </div>
-    <button
-      type="submit"
-      class="px-6 py-3 bg-purple-500 text-white rounded-md hover:bg-purple-400 focus:outline-none focus:ring-4 focus:ring-purple-300"
-    >
-      Stay Updated
-    </button>
-  </form>
-  <div id="result" class="mt-3 text-center"></div>
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        id="form"
+        class="needs-validation flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4"
+        novalidate
+      >
+        <input type="hidden" name="access_key" value="7925f9dd-b19c-4de3-acfc-31e8981a13fd" />
+        <!-- Create your free access key from https://web3forms.com/ -->
+        <input
+          type="checkbox"
+          class="hidden"
+          style="display: none"
+          name="botcheck"
+        />
+        <div class="flex-grow w-full md:w-auto">
+          <label for="email_address" class="sr-only">Email</label>
+          <input
+            id="email_address"
+            type="email"
+            placeholder="Email"
+            name="email"
+            required
+            class="w-full px-4 py-3 border-2 placeholder:text-gray-400 rounded outline-none focus:ring-4 border-gray-100 ring-gray-100"
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full md:w-auto px-6 py-3 bg-purple-500 text-white rounded-md hover:bg-purple-400 focus:outline-none focus:ring-4 focus:ring-purple-300"
+        >
+          Stay Updated
+        </button>
+      </form>
+    <div id="result" class="mt-3 text-center"></div>
   </div>
 </template>
 

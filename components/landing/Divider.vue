@@ -6,6 +6,6 @@
 
 <style scoped>
  .divider-container {
-    padding: 100px 0;
+    padding: 30px 0;
   }
 </style>

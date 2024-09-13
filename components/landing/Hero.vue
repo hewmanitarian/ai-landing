@@ -1,6 +1,6 @@
 <template>
-  <main class="grid lg:grid-cols-2 place-items-center pt-20 pb-8 md:pt-20">
-    <div class="md:order-0 md:block">
+  <main class="flex items-center justify-center">
+    <!-- <div class="md:order-0 md:block">
       <img
         class="rounded-full transition-transform transform hoverrotate"
         src="~/assets/svg/hero1.svg"
@@ -10,42 +10,37 @@
         width="1000"
         height="1000"
       />
-    </div>
-
+    </div> -->
 
     <div>
-      <h1 class="text-5xl lg:text-6xl xl:text-6xl font-bold lg:tracking-tight">
-        <u>Appointments</u> on autopilot.
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <h1 class="text-5xl lg:text-6xl xl:text-6xl font-bold">
+        Koala.
       </h1>
       <p class="text-lg mt-4 text-slate-600 max-w-xl">
-        <b><span class="text-primary">Koala</span> <span class="font-bold text-slate-400">Health</span></b> is a new way to manage your health appointment scheduling.
+        <b><span class="text-primary">Accessible</span> <span class="font-bold text-slate-400">Healthcare</span></b> for the 21st Century.
       </p>
-      <!-- <div class="mt-6 flex flex-col sm:flex-row gap-3">
-        <LandingLink
-          href="https://github.com/Gr33nW33n/nuxtship-template"
-          target="_blank"
-          rel="noopener">
-            View Docs
-        </LandingLink>
-        <LandingLink
-          size="lg"
-          styleName="outline"
-          rel="noopener"
-          href="https://github.com/Gr33nW33n/nuxtship-template"
-          target="_blank">
-            Sign Up
-          </LandingLink>
-      </div> -->
+      <p>Coming Soon.</p>
     </div>
   </main>
 </template>
 
 <style scoped>
-  img {
-    transition: transform 0.3s ease-in-out; /* Adjust the duration and timing function as needed */
-  }
+/* Ensure the parent container takes the full height of the viewport */
+html, body, #app, main {
+  height: 100%;
+  margin: 0;
+}
 
-  .hoverrotate:hover {
-    transform: scale(1.20) rotate(10deg);
-  }
+img {
+  transition: transform 0.3s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+
+.hoverrotate:hover {
+  transform: scale(1.20) rotate(10deg);
+}
 </style>

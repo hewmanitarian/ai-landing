@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "koalalander",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,7 +8,10 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "firebase deploy",
+    "deploy": "firebase deploy --only hosting",
+    "functions:build": "cd functions && npm run build && cd ..",
+    "functions": "firebase deploy --only functions",
+    "emulate": "npm run functions:build && firebase emulators:start --only functions",
     "all": "npm run generate && npm run deploy"
   },
   "devDependencies": {
@@ -20,5 +23,9 @@
     "tailwindcss": "^3.4.0",
     "vue": "^3.4.3",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.5.0",
+    "firebase-functions": "^6.0.0"
   }
 }

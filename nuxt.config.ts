@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: false,
   devtools: { enabled: true },
-  css: ["~/assets/css/main.css"],
+  css: ["~/assets/css/main.css", '@fontsource/quicksand/400.css', '@fontsource/quicksand/700.css'],
   postcss: {
     plugins: {
       tailwindcss: {},

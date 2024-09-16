@@ -10,9 +10,6 @@
       </h1>
       <p class="text-lg mt-4 text-slate-600 max-w-xl">
         You've been invited to <b><span class="text-primary">Koala</span> <span class="font-bold text-slate-400">Health</span></b> Early Access, an exclusive group of 100 users to test the platform before it's released to the public.
-        <br/>
-        <br/>
-        Click the button below to <b><span class="text-primary">sign up!</span></b>
       </p>
       <br/>
       <button
@@ -21,6 +18,33 @@
       >
         Subscribe 💳 
       </button>
+      <br/>
+      <br/>
+
+      <h2 class="text-xl mt-4 text-slate-600 max-w-xl">
+        <b>What to Expect</b>
+      </h2>
+      <p class="text-lg mt-4 text-slate-600 max-w-xl">
+        As part of this closed beta, you will have unique access to help us build and define this product and service.
+      </p>
+      <p class="text-lg mt-4 text-slate-600 max-w-xl">
+        Once you complete your registration, you will be:
+      </p>
+
+      <ol class="text-md text-slate-600 max-w-xl list-none pl-6 mt-2 space-y-2">
+        <li>👤&nbsp;&nbsp;Onboarded by your <b><span class="text-primary">proactive</span></b> health care representative</li>
+        <li>💬&nbsp;&nbsp;Choose your preferred communication channels</li>
+        <li>📅&nbsp;&nbsp;Receive a schedule of suggested appointments through 2025</li>
+        <li>✅&nbsp;&nbsp;Begin scheduling/rescheduling appointments</li>
+      </ol>
+
+      <p class="text-lg mt-6 text-slate-600 max-w-xl">
+        We look forward to putting your health on auto-pilot!
+      </p>
+      <br/>
+      <p class="text-right"><b><span class="text-primary">Koala</span></b>&nbsp;🌿</p>
+      <br/>
+      <br/>
     </div>
   </main>
 </template>

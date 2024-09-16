@@ -56,21 +56,6 @@ onMounted(() => {
   <!-- To make this contact form work, create your free access key from https://web3forms.com/
      Then you will get all form submissions in your email inbox. -->
   <div class="formmm">
-    <br/>
-    <br/>
-    <br/>
-     <h1 class="text-5xl lg:text-6xl xl:text-6xl font-bold">
-        Koala.
-      </h1>
-      <br/>
-      <p class="text-lg mt-4 text-slate-600 max-w-xl">
-        <b><span class="text-primary">Accessible</span> <span class="font-bold text-slate-400">Healthcare</span></b> for the 21st Century.
-      </p>
-      <p>Coming Soon.</p>
-
-      <br/>
-      <br/>
-      <br/>
       <form
         action="https://api.web3forms.com/submit"
         method="POST"

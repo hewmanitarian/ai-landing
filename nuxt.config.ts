@@ -10,4 +10,9 @@ export default defineNuxtConfig({
     },
   },
   modules: ["nuxt-icon"],
+  runtimeConfig: {
+    public: {
+      stripeBeta100Link: process.env.VITE_STRIPE_BETA100_LINK,
+    }
+  }
 });

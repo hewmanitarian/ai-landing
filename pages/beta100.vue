@@ -6,8 +6,6 @@ definePageMeta({
 
 <template>
   <LandingContainer>
-    <LandingHero></LandingHero>
-    <LandingDivider></LandingDivider>
-    <LandingContactsmall></LandingContactsmall>
+    <LandingBeta100></LandingBeta100>
   </LandingContainer>
 </template>

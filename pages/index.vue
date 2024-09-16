@@ -7,5 +7,6 @@ definePageMeta({
 <template>
   <LandingContainer>
     <LandingContactsmall></LandingContactsmall>
+    <StripeCheckout></StripeCheckout>
   </LandingContainer>
 </template>

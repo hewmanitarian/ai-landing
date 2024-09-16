@@ -6,28 +6,27 @@ import Stripe from 'stripe';
 admin.initializeApp();
 
 const stripeSecretKey = defineString('STRIPE_SECRET_KEY');
+const stripePriceId = defineString('STRIPE_PRICE_ID');
 const siteUrl = defineString('SITE_URL');
 
 if (!stripeSecretKey || !siteUrl) {
   throw new Error('Missing required environment variables');
 }
 
-const stripe = new Stripe(stripeSecretKey, {
-  apiVersion: '2024-06-20',
+const stripe = new Stripe(stripeSecretKey);
+
+export const helloWorld = functions.https.onRequest((request, response) => {
+  response.send("Hello from Firebase!");
 });
 
-export const createCheckoutSession = functions.https.onCall(async (request: functions.https.CallableRequest<any>) => {
-  // Optional: Check if the user is authenticated
-  if (!request.auth) {
-    throw new functions.https.HttpsError('unauthenticated', 'User must be logged in to checkout.');
-  }
-
+export const createCheckoutSession = functions.https.onRequest(async (request, response) => {
+  console.log('Creating checkout session');
   try {
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
       line_items: [
         {
-          price: 'price_1PyfUg2M5r7kzI92juYuwTM5', // Replace with your actual price ID
+          price: stripePriceId,
           quantity: 1,
         },
       ],
@@ -36,7 +35,8 @@ export const createCheckoutSession = functions.https.onCall(async (request: func
       cancel_url: `${siteUrl}/cancel`,
     });
 
-    return { sessionId: session.id };
+    console.log('Checkout session created:', session.id);
+    response.send({ sessionId: session.id });
   } catch (error) {
     console.error('Error creating checkout session:', error);
     throw new functions.https.HttpsError('internal', 'Unable to create checkout session');

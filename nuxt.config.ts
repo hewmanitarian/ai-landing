@@ -10,4 +10,9 @@ export default defineNuxtConfig({
     },
   },
   modules: ["nuxt-icon"],
+  runtimeConfig: {
+    public: {
+      stripePublicKey: process.env.VITE_STRIPE_PUBLIC_KEY
+    }
+  },
 });
